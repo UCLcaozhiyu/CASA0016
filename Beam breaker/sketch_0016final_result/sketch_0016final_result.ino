@@ -7,17 +7,16 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // 红外传感器引脚定义
-const int vs1838_1 = 2; // 第一个VS1838B信号引脚
-const int vs1838_2 = 4; // 第二个VS1838B信号引脚
-const int vs1838_3 = 7; // 第三个VS1838B信号引脚
-
+const int vs1838_1 = 2; 
+const int vs1838_2 = 4; 
+const int vs1838_3 = 7; 
 // 参数定义
-int peopleCount = 0;                     // 房间内人数计数
-unsigned long lastTriggerTime = 0;       // 上一次触发时间
-const unsigned long debounceTime = 50;   // 去抖延时（毫秒）
-const unsigned long resetDelay = 2000;   // 队列超时自动重置时间（毫秒）
+int peopleCount = 0;                     
+unsigned long lastTriggerTime = 0;      
+const unsigned long debounceTime = 50;   
+const unsigned long resetDelay = 2000;  
 
-int triggerQueue[3] = {0, 0, 0};         // 触发队列
+int triggerQueue[3] = {0, 0, 0};        
 
 void setup() {
   Serial.begin(9600);
