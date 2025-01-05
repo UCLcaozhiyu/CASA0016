@@ -66,5 +66,3 @@ This repository contains the code, design files, and documentation for the "Ligh
    ```bash
    git clone https://github.com/UCLcaozhiyu/CASA0016.git
    ```
-2. Follow the hardware setup guide in the documentation folder.
-3. Upload the code to your microcontroller using Arduino IDE.
